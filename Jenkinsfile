@@ -1,4 +1,4 @@
-pipeline{
+inepipeline{
     
     agent any
     tools {maven "M3"}
@@ -39,7 +39,7 @@ pipeline{
         stage("deploy")
         {
             steps{ 
-                sh "java -jar /home/coder/.jenkins/workspace/petClinicDeclarative/target/*.jar "
+                sh "java -jar /home/coder/.jenkins/workspace/petClinicDeclarativePipeline/target/*.jar "
             }
         }
     }
